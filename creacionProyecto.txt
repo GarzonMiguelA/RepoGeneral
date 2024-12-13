@@ -1,5 +1,11 @@
-Crear proyecto:
+Creacion proyecto:
 npm create vue@latest
 cd nombreProyecto
 npm install
 npm run dev
+
+Explicacion archivos:
+LibretaContactos: casa / otra opcion en github: https://github.com/GarzonMiguelA/Pr01-ContactForm.git
+ListaTareasInteractiva: casa 
+RouterBooks: casa
+XatVueCasa: casa / otra opcion en github: https://github.com/GarzonMiguelA/Xat_Vue.git

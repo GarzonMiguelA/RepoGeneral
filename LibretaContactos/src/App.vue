@@ -1,7 +1,7 @@
 <script setup>
   import { ref } from 'vue';
 
-  import Contaco from './components/Contaco.vue';
+  import Contaco from './components/Contacto.vue';
   
   const nombre = ref('');
   const numero = ref('');
