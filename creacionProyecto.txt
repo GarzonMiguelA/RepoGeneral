@@ -11,4 +11,33 @@ RouterBooks: casa
 XatVueCasa: casa / otra opcion en github: https://github.com/GarzonMiguelA/Xat_Vue.git
 BurguerProvide: github: https://github.com/GarzonMiguelA/Burguer_ITB.git
 PracticaRouterMia: github: https://github.com/GarzonMiguelA/PracticaRouterWeb-MiguelAngel.git
-PracticaRouterProfe:
+PracticaRouterProfe: Dentro de la PracticaRouter de classroom
+
+
+PARA EXAMEN:
+Importante utilizar computed:
+Reactividad a Vue3 computed()
+Para hacer acciones sobre var reactivas pero solo cuando alguna cosa cambia
+¿Este valor cambia? si, usamos computed
+Por defecto, las props son reactivas
+
+
+APP.vue:
+debe estar vacio, solo se llama al componente (trabajamos por componentes)
+en router link utilizar params:
+    <RouterLink v-for="destination in dades.destinations" :key="destination.id" :to="{name: 'destination.show', params:{id: destination.id,slug:destination.slug}}">
+        {{ destination.name }}
+    </RouterLink>
+
+
+En props de index.js uso de props:
+children:[
+     {
+       path:':experienceSlug',
+       name:'experience.show',
+       component:()=>import('@/views/ExperienceShow.vue'),
+       props:route=>({...route.params, id:parseInt(route.params.id)})
+     }
+
+
+
