@@ -1,0 +1,95 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Technology",
+      "slug": "technology",
+      "description": "Latest trends and news in technology.",
+      "child": {
+        "id": 101,
+        "name": "Software",
+        "slug": "software",
+        "description": "All about software development and tools.",
+        "child": null
+      }
+    },
+    {
+      "id": 2,
+      "name": "Science",
+      "slug": "science",
+      "description": "Discoveries and innovations in science.",
+      "child": {
+        "id": 201,
+        "name": "Physics",
+        "slug": "physics",
+        "description": "Understanding the laws of nature.",
+        "child": null
+      }
+    },
+    {
+      "id": 3,
+      "name": "Health",
+      "slug": "health",
+      "description": "Well-being and medical advancements.",
+      "child": {
+        "id": 301,
+        "name": "Nutrition",
+        "slug": "nutrition",
+        "description": "Understanding the importance of balanced diets.",
+        "child": null
+      }
+    },
+    {
+      "id": 4,
+      "name": "Education",
+      "slug": "education",
+      "description": "Learning, teaching methods, and academic innovations.",
+      "child": {
+        "id": 401,
+        "name": "Mathematics",
+        "slug": "mathematics",
+        "description": "The study of numbers and their applications.",
+        "child": null
+      }
+    },
+    {
+      "id": 5,
+      "name": "Art",
+      "slug": "art",
+      "description": "Creative expressions in various forms.",
+      "child": {
+        "id": 501,
+        "name": "Painting",
+        "slug": "painting",
+        "description": "Exploring different techniques and styles in painting.",
+        "child": null
+      }
+    },
+    {
+      "id": 6,
+      "name": "Business",
+      "slug": "business",
+      "description": "Entrepreneurship, management, and market trends.",
+      "child": {
+        "id": 601,
+        "name": "Marketing",
+        "slug": "marketing",
+        "description": "Strategies to promote and sell products and services.",
+        "child": null
+      }
+    },
+    {
+      "id": 7,
+      "name": "Sports",
+      "slug": "sports",
+      "description": "News and trends in the world of sports.",
+      "child": {
+        "id": 701,
+        "name": "Football",
+        "slug": "football",
+        "description": "All about the game of football.",
+        "child": null
+      }
+    }
+  ]
+}
