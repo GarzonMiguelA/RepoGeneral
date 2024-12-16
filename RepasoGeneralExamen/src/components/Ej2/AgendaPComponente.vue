@@ -1,17 +1,18 @@
 <script setup>
 import { ref } from 'vue';
 import AgendaHComponente from './AgendaHComponente.vue';
+import { computed } from 'vue';
 
 const nombres = ref([])
 const nuevoNombre = ref('')
 
-//Funcion para añadir nuevo nombre:
 const agregarNombre = () => {
     if (nuevoNombre.value.trim() !== '') {
         nombres.value.push(nuevoNombre.value);
         nuevoNombre.value = '';
     }
 }
+
 
 const eliminarNombre = (nombre) => {
     nombres.value = nombres.value.filter(nombres => nombres !== nombre)

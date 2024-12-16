@@ -17,9 +17,22 @@ PracticaRouterProfe: Dentro de la PracticaRouter de classroom
 PARA EXAMEN:
 Importante utilizar computed:
 Reactividad a Vue3 computed()
-Para hacer acciones sobre var reactivas pero solo cuando alguna cosa cambia
-¿Este valor cambia? si, usamos computed
+¿Qué es computed?
+  - Computed sirve para calcular un valor basado en otros datos reactivos.
+  - Se actualiza automáticamente si cambian los datos de los que depende.
+
+¿Cuándo si usar computed?
+  - Siempre y cuando tenga valores reactivos recibidos a traves de props (defineEmits, props, ref, etc.)
+  - Ejemplo: Si tienes una prop price y quieres calcular el precio con impuestos, usa computed para hacerlo automáticamente cuando cambie el price.
+
 Por defecto, las props son reactivas
+
+¿Cuándo no usar computed?
+  - Cuando necesitas modificar datos directamente. Para eso, usa funciones normales o métodos.
+  - Cuando no necesitas un valor derivado. Si algo es estático o no depende de reactividad, no hace falta computed.
+
+
+
 
 
 APP.vue:

@@ -12,7 +12,7 @@ import './assets/main.css'
             <!-- En ete caso marcamos con dos routerLink, uno para la home -->
              <!-- El siguiente router link hacemos uso de for para mostrar todos los nombres en el nav -->
             <RouterLink to="/">Home</RouterLink>     
-            <RouterLink v-for="(country, index) in data.destinations" :key="index" :to="'/Todos/'+country.id">
+            <RouterLink v-for="(country) in data.destinations" :key="country.id" :to="'/Todos/'+country.id">
                 {{ country.name }}
             </RouterLink>
         </ul>

@@ -14,8 +14,10 @@ const category = json.categories.find(c => c.id === categoryId);
     </button>
     <h1>{{ category.name }}</h1>
     <p>{{ category.description }}</p>
+
     <RouterLink :to="`/BienvenidaComponente/categories/${route.params.id}/child/${category.child.slug}`">
       <h3>Hijo: {{ category.child.name }}</h3>
     </RouterLink>
+    
     <RouterView></RouterView>
 </template>
