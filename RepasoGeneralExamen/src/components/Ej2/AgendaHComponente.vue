@@ -13,12 +13,12 @@ const emit = defineEmits(['eliminar-nombre'])
 
 const eliminarNombre = (nombre) => {
     emit('eliminar-nombre', nombre)
-}
 
+}
 </script>
 
 <template>
-   <ul>
+    <ul>
     <li v-for="(nombre,index) in nombres" :key="index">
         {{ nombre }}
         <button @click="eliminarNombre(nombre)">

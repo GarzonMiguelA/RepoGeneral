@@ -4,6 +4,7 @@ cd nombreProyecto
 npm install
 npm run dev
 
+
 Explicacion archivos:
 LibretaContactos: casa / otra opcion en github: https://github.com/GarzonMiguelA/Pr01-ContactForm.git
 ListaTareasInteractiva: casa 
@@ -63,4 +64,18 @@ children:[
      }
 
 
+//Recibimos el array de productos como prop
+const props = defineProps({
+  products:{
+    type:Array,
+    required: true,
+  } 
+})
+props.products
 
+
+const filteredUsers = computed(() => {
+  return users.value.filter(user =>
+    user.nom.toLowerCase().includes(filterText.value.toLowerCase())
+  );
+});
