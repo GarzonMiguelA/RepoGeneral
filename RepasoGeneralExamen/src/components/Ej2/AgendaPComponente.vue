@@ -20,6 +20,9 @@ const eliminarNombre = (nombre) => {
 </script>
 
 <template>
+    <RouterLink :to="'/'">
+        Volver a ejercicios
+    </RouterLink>
     <!--Lista de nombres con boton-->
 
     <h2>Agenda de nombres</h2>

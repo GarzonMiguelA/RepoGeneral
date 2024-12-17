@@ -4,11 +4,13 @@ import { inject, ref } from 'vue';
 const mensaje = inject('mensaje');
 const nuevoMensaje = ref('');
 
+
 const actualizarMensaje = () => {
     if (mensaje && typeof mensaje.value === 'string') {
         mensaje.value = nuevoMensaje.value;
     }
 };
+
 </script>
 
 <template>

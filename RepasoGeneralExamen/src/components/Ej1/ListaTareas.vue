@@ -16,6 +16,9 @@ const añadirTarea = () => {
 </script>
 
 <template>
+    <RouterLink :to="'/'">
+        Volver a ejercicios
+    </RouterLink>
     <div>
         <h2>Lista de tareas</h2>
         <form @submit.prevent="añadirTarea">

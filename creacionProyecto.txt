@@ -24,14 +24,24 @@ Reactividad a Vue3 computed()
 ¿Cuándo si usar computed?
   - Siempre y cuando tenga valores reactivos recibidos a traves de props (defineEmits, props, ref, etc.)
   - Ejemplo: Si tienes una prop price y quieres calcular el precio con impuestos, usa computed para hacerlo automáticamente cuando cambie el price.
+  - SIEMPRE que quieras calcular un valor basado en datos reactivos.
 
 Por defecto, las props son reactivas
 
 ¿Cuándo no usar computed?
   - Cuando necesitas modificar datos directamente. Para eso, usa funciones normales o métodos.
   - Cuando no necesitas un valor derivado. Si algo es estático o no depende de reactividad, no hace falta computed.
+  - NO si necesitas modificar un valor (en ese caso, usa una función normal).
 
+Props y Emits:
+  - Props: Para pasar datos del componente padre al hijo.
+  - Emits: Para enviar eventos o información del hijo al padre.
+  Úsalos cuando la comunicación es directa (padre ↔ hijo).
 
+Provide e Inject:
+  - Provide: El componente padre proporciona datos.
+  - Inject: Los componentes hijos consumen esos datos, sin importar la profundidad en la jerarquía.
+  Úsalos para comunicación indirecta entre componentes distantes (padre → nietos, etc.) cuando props sería engorroso.Úsalos para comunicación indirecta entre componentes distantes (padre → nietos, etc.) cuando props sería engorroso.
 
 
 
@@ -40,7 +50,7 @@ debe estar vacio, solo se llama al componente (trabajamos por componentes)
 en router link utilizar params:
     <RouterLink v-for="destination in dades.destinations" :key="destination.id" :to="{name: 'destination.show', params:{id: destination.id,slug:destination.slug}}">
         {{ destination.name }}
-    </RouterLink>
+    </RouterLink> //Ejemplo en Ej4 BienvenidaComponente
 
 
 En props de index.js uso de props:
